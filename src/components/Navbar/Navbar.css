@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10.5rem;
+ 
+}
+a {
+  color: rgb(68, 66, 66);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+
