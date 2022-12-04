@@ -1,0 +1,9 @@
+.list-group {
+  margin: 10rem;
+}
+.minimg {
+  width: 350px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+}

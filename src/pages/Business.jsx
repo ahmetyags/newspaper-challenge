@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const Business = () => {
   const [haber, setHaber] = useState([]);
@@ -16,12 +16,13 @@ const Business = () => {
   useEffect(() => {
     News();
   }, []);
-  console.log(haber)
+  console.log(haber);
   return (
-    <div>Business
+    <div>
+      Business
       {/* {haber?.map()} */}
     </div>
-  )
-}
+  );
+};
 
-export default Business
+export default Business;

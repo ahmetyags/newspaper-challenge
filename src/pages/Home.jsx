@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slide from "../components/Slide/Slide";
 import axios from "axios";
+import Content from "../components/Content/Content";
 const Home = () => {
   const [haber, setHaber] = useState([]);
   const News = async () => {
@@ -19,10 +20,11 @@ const Home = () => {
   // console.log(haber);
   return (
     <div>
-      <Slide haber={haber} />;
+      <Slide haber={haber} />
       {haber?.map((item) => {
         <div></div>;
       })}
+      <Content haber={haber} />
     </div>
   );
 };

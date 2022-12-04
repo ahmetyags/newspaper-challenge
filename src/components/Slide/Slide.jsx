@@ -6,7 +6,7 @@ function Slide({ haber }) {
   return (
     <Carousel>
       {haber.slice(0, 3).map((i) => {
-        console.log(i);
+        // console.log(i);
         return (
           <Carousel.Item interval={1000}>
             <img
