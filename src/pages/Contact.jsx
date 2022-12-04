@@ -13,7 +13,7 @@ const Contact = () => {
         <InputGroup.Text className="formlabel">Last name</InputGroup.Text>
         <Form.Control aria-label="Last name" placeholder="Last name" />
       </InputGroup>
-      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+      <Form.Group className="mb-3 " controlId="exampleForm.ControlInput1">
         <Form.Label className="formlabel">Email address</Form.Label>
         <Form.Control type="email" placeholder="name@example.com" />
       </Form.Group>
@@ -25,7 +25,7 @@ const Contact = () => {
         <Form.Label className="formlabel">Message</Form.Label>
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
-      <Button className="w-100 " type="submit" variant="success">
+      <Button className="w-50 " type="submit" variant="dark">
         Submit
       </Button>
     </Form>

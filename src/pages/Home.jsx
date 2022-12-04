@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Slide from "../components/Slide";
+import Slide from "../components/Slide/Slide";
 import axios from "axios";
 const Home = () => {
   const [haber, setHaber] = useState([]);
@@ -16,13 +16,12 @@ const Home = () => {
   useEffect(() => {
     News();
   }, []);
-  console.log(haber);
+  // console.log(haber);
   return (
     <div>
+      <Slide haber={haber} />;
       {haber?.map((item) => {
-        <Slide 
-        data1={item.url} 
-        data2={item.urlToImage} />;
+        <div></div>;
       })}
     </div>
   );

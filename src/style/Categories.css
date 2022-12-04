@@ -1,5 +1,4 @@
 .site-section {
-  /* z-index: 10; */
   position: absolute;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

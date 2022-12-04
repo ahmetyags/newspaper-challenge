@@ -1,25 +1,25 @@
 .navbar {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 10.5rem;
+  display: flex !important;
+  justify-content: flex-start !important;
+  margin-left: 10.5rem !important;
   box-shadow: 3px 0.5px 0px rgb(73, 71, 71);
 }
 a {
-  color: rgb(77, 75, 75);
-  text-decoration: none;
-  font-size: 1rem;
-  padding: 1rem;
+  color: rgb(77, 75, 75) !important;
+  text-decoration: none !important;
+  font-size: 1rem !important;
+  padding: 1rem !important;
 }
 a:hover {
-  color: black;
-  font-size: large;
+  color: black !important;
+  font-size: large !important;
   transform: translate(2s);
   transition: ease-in-out;
 }
 a:active {
   color: rgb(100, 133, 28);
   transform: translate(2s);
-  border-bottom: 1px solid gray ;
+  border-bottom: 1px solid gray;
 }
 
 /* a:visited{
