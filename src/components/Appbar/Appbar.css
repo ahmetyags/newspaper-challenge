@@ -1,8 +1,9 @@
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
   box-shadow: 0 0 0 0 !important;
+  height: 130px !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 .MuiToolbar-root {
-  background-color: rgb(255, 255, 255) !important;
   color: black !important;
   border: none !important;
 }
@@ -13,8 +14,12 @@
 }
 
 .appbar {
-  font-size: 2rem !important;
+  font-size: 2.5rem !important;
+  z-index: 2;
 }
 .appbar:hover {
-  font-size: 2rem !important;
+  font-size: 2.5rem !important;
+}
+.form-search {
+  padding-right: 5rem !important;
 }

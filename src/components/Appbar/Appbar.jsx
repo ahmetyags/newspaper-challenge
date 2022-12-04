@@ -1,53 +1,12 @@
 import * as React from "react";
-import { styled, alpha } from "@mui/material/styles";
+
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import InputBase from "@mui/material/InputBase";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import SearchIcon from "@mui/icons-material/Search";
 import "./Appbar.css";
-import { IconButton } from "@mui/material";
-
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  // borderRadius: theme.shape.borderRadius,
-  // borderBottomColor: theme.palette.common.black,
-  backgroundColor: alpha(theme.palette.common.white, 1),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 1),
-  },
-  display: "flex",
-  justifyContent: "space-evenly",
-  paddingRight: "10rem",
-  paddingLeft: "1rem",
-  marginLeft: "10rem",
-  width: "50%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(5),
-    width: "100px",
-  },
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "black",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(1)})`,
-    // transition: theme.transitions.create("width"),
-    width: "50%",
-    // [theme.breakpoints.up("sx")]: {
-    //   width: "6ch",
-    //   "&:focus": {
-    //     width: "1ch",
-    //   },
-    // },
-  },
-}));
 
 export default function SearchAppBar() {
   return (
@@ -57,48 +16,30 @@ export default function SearchAppBar() {
           <Typography
             variant="h4"
             component="div"
-            sx={{ paddingLeft: "10rem", flexGrow: 1, display: { sm: "block" } }}
+            sx={{
+              paddingLeft: "11rem",
+              flexGrow: 3,
+              display: { sm: "inline" },
+            }}
           >
             <a href="/about" className="appbar">
               Ahmet Yağız Özbak
             </a>
           </Typography>
-          <a href="https://facebook.com/">
-            <FacebookIcon sx={{ marginRight: "0.5rem" }} />
-          </a>
-          <a href="https://twitter.com/">
-            <TwitterIcon sx={{ marginRight: "0.5rem" }} />
-          </a>
-          {/* <InstagramIcon /> */}
-          <a href="https://www.linkedin.com/in/ahmetyags/">
-            <LinkedInIcon />
-          </a>
 
-          <Search
-            sx={{
-              borderRadius: "30px",
-              borderBottom: "2px solid black",
-              borderColor: "text.primary",
-              paddingRight: "10rem",
-            }}
-          >
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
-
-          <IconButton aria-label="search">
-            <SearchIcon
-              sx={{
-                marginRight: "0.2rem",
-                backgroundColor: "black",
-                borderRadius: "35px",
-                color: "white",
-                padding: "0.6rem",
-              }}
-            />
-          </IconButton>
+          <div className="container-fluid">
+            <form className="d-flex" role="search">
+              <input
+                className="form-search"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-outline-dark" type="submit">
+                <a href="Search">Search</a>
+              </button>
+            </form>
+          </div>
         </Toolbar>
       </AppBar>
     </Box>
