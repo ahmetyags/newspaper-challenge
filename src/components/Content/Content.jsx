@@ -5,7 +5,7 @@ const Content = ({ haber }) => {
   return (
     <div className="list-group">
       {haber.slice(4, 20).map((i) => {
-        console.log(i);
+        // console.log(i);
         return (
           <a
             href={i.url}
