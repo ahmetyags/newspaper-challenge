@@ -6,7 +6,7 @@ import weathergif from "../../documents/weather.gif";
 const Card = () => {
   return (
     <div className="container">
-      <h2 className="headline">Frontend developer</h2>
+      <h2 className="headline">Frontend Developer</h2>
       <h4 className="topic">SUMMARY</h4>
       <p className="message">
         Having 3+ years experience in IT and 1+ years of experience in frontend

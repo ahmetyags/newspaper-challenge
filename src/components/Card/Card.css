@@ -2,6 +2,7 @@
   /* text-align: center; */
   margin-left: 10rem;
   margin-right: 10rem;
+  font-size: x-large;
 }
 .headline {
   text-align: center;
@@ -10,5 +11,4 @@
   /* max-width: 2vh; */
   border-radius: 8px;
   width: 400px;
-
 }

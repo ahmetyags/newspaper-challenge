@@ -1,7 +1,7 @@
 form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 3rem;
+  margin: 4rem;
   margin-left: 25rem;
   width: 400px;
   padding-left: 20rem;
@@ -41,6 +41,6 @@ form {
   border-radius: 2rem;
 }
 
-.btn-success:hover{
+.btn-success:hover {
   background-color: rgb(51, 50, 50);
 }

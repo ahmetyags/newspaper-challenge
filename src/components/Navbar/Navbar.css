@@ -19,3 +19,7 @@ a:active {
   color: rgb(148, 197, 49);
   transform: translate(2s);
 }
+
+/* a:visited{
+  color: red;
+} */
