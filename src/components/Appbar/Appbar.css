@@ -18,3 +18,10 @@
   border-radius: none;
   border-bottom: none ;
 }
+
+.appbar{
+  font-size: 2rem;
+}
+.appbar:hover{
+  font-size: 2rem;
+}

@@ -2,13 +2,20 @@
   display: flex;
   justify-content: flex-start;
   margin-left: 10.5rem;
- 
 }
 a {
-  color: rgb(68, 66, 66);
+  color: rgb(77, 75, 75);
   text-decoration: none;
   font-size: 1rem;
   padding: 1rem;
 }
-
-
+a:hover {
+  color: black;
+  font-size: large;
+  transform: translate(2s);
+  transition: ease-in-out;
+}
+a:active {
+  color: rgb(148, 197, 49);
+  transform: translate(2s);
+}

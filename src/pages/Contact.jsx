@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import InputGroup from "react-bootstrap/InputGroup";
 import "../style/Contact.css";
 const Contact = () => {
@@ -25,6 +25,9 @@ const Contact = () => {
         <Form.Label className="formlabel">Example textarea</Form.Label>
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
+      <Button className="w-100 " type="submit" variant="success">
+        Submit
+      </Button>
     </Form>
   );
 };

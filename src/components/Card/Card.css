@@ -1,0 +1,14 @@
+.container {
+  /* text-align: center; */
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.headline {
+  text-align: center;
+}
+.images {
+  /* max-width: 2vh; */
+  border-radius: 8px;
+  width: 400px;
+
+}

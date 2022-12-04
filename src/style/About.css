@@ -1,0 +1,9 @@
+button.mdi {
+  position: absolute;
+  margin-left: 43rem;
+  padding: 1rem;
+  top: 85rem;
+  color: rgb(228, 227, 227);
+  background-color: black;
+  border-radius: 20px;
+}

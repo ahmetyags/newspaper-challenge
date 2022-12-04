@@ -59,7 +59,7 @@ export default function SearchAppBar() {
             component="div"
             sx={{ paddingLeft: "10rem", flexGrow: 1, display: { sm: "block" } }}
           >
-            Ahmet Yağız Özbak
+            <a href="/about" className="appbar">Ahmet Yağız Özbak</a>
           </Typography>
           <FacebookIcon sx={{ marginRight: "0.8rem" }} />
           <TwitterIcon sx={{ marginRight: "0.8rem" }} />

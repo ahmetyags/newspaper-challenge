@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SearchAppBar from "../components/Appbar/Appbar";
 import Navbar from "../components/Navbar/Navbar";
+import About from "../pages/About";
 import Business from "../pages/Business";
 import Categories from "../pages/Categories";
 import Contact from "../pages/Contact";
@@ -14,10 +15,11 @@ import Sport from "../pages/Sport";
 const AppRouter = () => {
   return (
     <BrowserRouter>
-      <SearchAppBar/>
+      <SearchAppBar />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/politics" element={<Politics />} />
         <Route path="/business" element={<Business />} />
