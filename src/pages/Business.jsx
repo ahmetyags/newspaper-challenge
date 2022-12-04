@@ -20,7 +20,7 @@ const Business = () => {
   return (
     <div className="contant">
       <h2>
-        <u className="posthead">Popular Posts</u>
+        <u className="posthead">Business</u>
       </h2>
       {haber.slice(0, 20).map((i) => {
         return (

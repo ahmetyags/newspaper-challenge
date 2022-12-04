@@ -5,7 +5,7 @@ const Categories = () => {
   const [haber, setHaber] = useState([]);
   const News = async () => {
     const API_KEY = `55c93a5adba845178d6adf7c3a6ecd3c`;
-    const API_URL = `https://newsapi.org/v2/top-headlines?country=tr&category=technology&apiKey=${API_KEY}`;
+    const API_URL = `https://newsapi.org/v2/top-headlines?country=tr&category=general&apiKey=${API_KEY}`;
     try {
       const { data } = await axios(API_URL);
       setHaber(data.articles);
