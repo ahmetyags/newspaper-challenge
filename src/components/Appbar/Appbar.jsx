@@ -8,6 +8,7 @@ import InputBase from "@mui/material/InputBase";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import SearchIcon from "@mui/icons-material/Search";
 import "./Appbar.css";
 import { IconButton } from "@mui/material";
@@ -59,11 +60,20 @@ export default function SearchAppBar() {
             component="div"
             sx={{ paddingLeft: "10rem", flexGrow: 1, display: { sm: "block" } }}
           >
-            <a href="/about" className="appbar">Ahmet Yağız Özbak</a>
+            <a href="/about" className="appbar">
+              Ahmet Yağız Özbak
+            </a>
           </Typography>
-          <FacebookIcon sx={{ marginRight: "0.8rem" }} />
-          <TwitterIcon sx={{ marginRight: "0.8rem" }} />
-          <InstagramIcon />
+          <a href="https://facebook.com/">
+            <FacebookIcon sx={{ marginRight: "0.5rem" }} />
+          </a>
+          <a href="https://twitter.com/">
+            <TwitterIcon sx={{ marginRight: "0.5rem" }} />
+          </a>
+          {/* <InstagramIcon /> */}
+          <a href="https://www.linkedin.com/in/ahmetyags/">
+            <LinkedInIcon />
+          </a>
 
           <Search
             sx={{

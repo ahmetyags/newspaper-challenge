@@ -2,6 +2,7 @@
   display: flex;
   justify-content: flex-start;
   margin-left: 10.5rem;
+  box-shadow: 3px 0.5px 0px rgb(73, 71, 71);
 }
 a {
   color: rgb(77, 75, 75);
@@ -16,8 +17,9 @@ a:hover {
   transition: ease-in-out;
 }
 a:active {
-  color: rgb(148, 197, 49);
+  color: rgb(100, 133, 28);
   transform: translate(2s);
+  border-bottom: 1px solid gray ;
 }
 
 /* a:visited{

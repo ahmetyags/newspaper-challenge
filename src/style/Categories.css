@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-left: 10rem;
+  font-size: medium;
 }
 /* .underline{
 margin-right: 55rem;

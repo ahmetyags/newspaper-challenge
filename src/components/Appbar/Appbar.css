@@ -1,8 +1,11 @@
-
+.css-hip9hq-MuiPaper-root-MuiAppBar-root{
+  box-shadow: 0 0 0 0 !important;
+}
 .MuiToolbar-root {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255)!important;
   color: black;
   border: none;
+  
 }
 
 .MuiInputBase-input {
