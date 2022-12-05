@@ -10,7 +10,7 @@ const Appbar = () => {
   const [query, setQuery] = useState([]);
 
   const News = async () => {
-    const API_KEY = `649866a13f7a4d529a6b03b95e5b57ae`;
+    const API_KEY = `676f017549224f488970f1835f9db971`;
     const API_URL = `https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${API_KEY}`;
     try {
       const { data } = await axios(API_URL);
