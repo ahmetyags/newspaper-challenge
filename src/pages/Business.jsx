@@ -4,7 +4,7 @@ import axios from "axios";
 const Business = () => {
   const [haber, setHaber] = useState([]);
   const News = async () => {
-    const API_KEY = `b687d4c6128f4dc68e4f8c39785a6ed0`;
+    const API_KEY = `649866a13f7a4d529a6b03b95e5b57ae`;
     const API_URL = `https://newsapi.org/v2/top-headlines?country=tr&category=business&apiKey=${API_KEY}`;
     try {
       const { data } = await axios(API_URL);
