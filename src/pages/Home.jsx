@@ -5,7 +5,7 @@ import Content from "../components/Content/Content";
 const Home = () => {
   const [haber, setHaber] = useState([]);
   const News = async () => {
-    const API_KEY = `55c93a5adba845178d6adf7c3a6ecd3c`;
+    const API_KEY = `b687d4c6128f4dc68e4f8c39785a6ed0`;
     const API_URL = `https://newsapi.org/v2/top-headlines?country=tr&apiKey=${API_KEY}`;
     try {
       const { data } = await axios(API_URL);
@@ -17,13 +17,10 @@ const Home = () => {
   useEffect(() => {
     News();
   }, []);
-  // console.log(haber);
+  console.log(haber, "geldi");
   return (
     <div>
       <Slide haber={haber} />
-      {haber?.map((item) => {
-        <div></div>;
-      })}
       <Content haber={haber} />
     </div>
   );

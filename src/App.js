@@ -1,10 +1,14 @@
 import AppRouter from "./router/AppRouter";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SearchNewsProvider from "./components/context/SearchNews";
+
 
 function App() {
   return (
     <div>
-      <AppRouter />
+      <SearchNewsProvider>
+        <AppRouter />
+      </SearchNewsProvider>
     </div>
   );
 }

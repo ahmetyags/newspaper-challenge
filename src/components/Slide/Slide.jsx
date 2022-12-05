@@ -1,14 +1,12 @@
 import Carousel from "react-bootstrap/Carousel";
-import "./Slide.css"
+import "./Slide.css";
 function Slide({ haber }) {
-  // console.log("haber geldi,", haber);
-  // console.log(haber.slice(0, 3), "slice geldi");
   return (
     <Carousel>
-      {haber.slice(0, 3).map((i) => {
+      {haber.slice(0, 3).map((i, index) => {
         // console.log(i);
         return (
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={1000} key={index}>
             <img
               className="d-block w-100"
               src={i.urlToImage}

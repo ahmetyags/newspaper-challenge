@@ -1,11 +1,11 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 const Sport = () => {
   const [haber, setHaber] = useState([]);
   const News = async () => {
-    const API_KEY = `55c93a5adba845178d6adf7c3a6ecd3c`;
-    const API_URL = `https://newsapi.org/v2/top-headlines?country=tr&category=politics&apiKey=${API_KEY}`;
+    const API_KEY = `b687d4c6128f4dc68e4f8c39785a6ed0`;
+    const API_URL = `https://newsapi.org/v2/top-headlines?country=tr&category=sports&apiKey=${API_KEY}`;
     try {
       const { data } = await axios(API_URL);
       setHaber(data.articles);
@@ -26,6 +26,7 @@ const Sport = () => {
         return (
           <div className="site-section news-3">
             <div className="contain col-lg-9">
+              <img className="imagesurl" src={i.urlToImage} alt="news" />
               <h2 className="header-2">{i.description}</h2>
               <p className="contents">{i.content}</p>
               <span className="news-contain pr-2">{i.author}</span>
@@ -43,4 +44,4 @@ const Sport = () => {
   );
 };
 
-export default Sport
+export default Sport;
