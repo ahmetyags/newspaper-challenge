@@ -22,9 +22,9 @@ const Design = () => {
       <h2>
         <u className="posthead">Design</u>
       </h2>
-      {haber.slice(0, 20).map((i) => {
+      {haber.slice(0, 20).map((i, index) => {
         return (
-          <div className="site-section news-3">
+          <div key={index} className="site-section news-3">
             <div className="contain col-lg-9">
               <img className="imagesurl" src={i.urlToImage} alt="news" />
               <h2 className="header-2">{i.description}</h2>

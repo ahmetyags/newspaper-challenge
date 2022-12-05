@@ -25,7 +25,7 @@ const Contact = () => {
         <Form.Label className="formlabel">Message</Form.Label>
         <Form.Control as="textarea" rows={3} />
       </Form.Group>
-      <Button className="w-50 " type="submit" variant="dark">
+      <Button className="w-50 buton-submt " type="submit" variant="dark">
         Submit
       </Button>
     </Form>

@@ -1,7 +1,6 @@
-
 .container-fluid {
-  position: absolute !important;
-  top: 30px !important;
+  position: relative !important;
+  top: 20px !important;
   margin-right: 2 rem !important;
 }
 .btn {
@@ -9,17 +8,29 @@
   margin-left: 10px !important;
   margin-right: 10px !important;
 }
-
+.appbar {
+  font-size: 2.5rem !important;
+}
 .appbar:hover {
   font-size: 2.5rem !important;
 }
 .form-search {
   margin-left: 10rem !important;
 }
-.navbar-brand {
+.name-nav {
   font-size: xx-large !important;
 }
 .btn btn-outline-dark {
-  width: 20px !important;
-  height: 20px !important;
+  width: 1rem !important;
+  height: 2px !important;
+  padding: 1rem !important;
+}
+.bi-search {
+  padding: 1rem !important;
+}
+.button.buton {
+  position: fixed;
+  margin: 10px !important;
+  border-color: aliceblue;
+  margin-bottom: 1rem !important;
 }

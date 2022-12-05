@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   margin-left: 10rem;
   font-size: medium;
+  top: 1rem;
 }
 /* .underline{
 margin-right: 55rem;
@@ -16,5 +17,9 @@ margin-right: 55rem;
   margin-bottom: 2rem;
   margin-left: 10rem;
   font-size: xx-large;
- 
+  /* margin-top: 5rem; */
+}
+
+.headline {
+  margin-top: 5rem;
 }
