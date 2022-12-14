@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slide from "../components/Slide/Slide";
 import axios from "axios";
 import Content from "../components/Content/Content";
+import "../style/Home.css";
 const Home = () => {
   const [haber, setHaber] = useState([]);
   const News = async () => {
@@ -17,9 +18,9 @@ const Home = () => {
   useEffect(() => {
     News();
   }, []);
-  console.log(haber, "geldi");
+  // console.log(haber, "geldi");
   return (
-    <div>
+    <div className="home-div">
       <Slide haber={haber} />
       <Content haber={haber} />
     </div>

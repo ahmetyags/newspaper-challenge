@@ -11,6 +11,8 @@ const Content = ({ haber }) => {
             href={i.url}
             className="list-group-item list-group-item-action "
             aria-current="true"
+            target="_blank"
+            rel="noreferrer"
             key={index}
           >
             <div className="d-flex w-100 justify-content-between">

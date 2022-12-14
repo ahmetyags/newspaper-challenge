@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SearchNewsContext } from "../context/SearchNews";
 import { Button } from "react-bootstrap";
+import "./Appbar.css";
 
 const Appbar = () => {
   const navigate = useNavigate();

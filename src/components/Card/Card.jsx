@@ -29,7 +29,11 @@ const Card = () => {
         the entered word. Skills/Tools : React-router library, Bootstrap
         library, Axios library and Firebase.
       </p>
-      <a href="https://movie-app-ahmetyags.vercel.app/" target="_blank">
+      <a
+        href="https://movie-app-ahmetyags.vercel.app/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img className="images" src={moviegif} alt="movieapp" />
       </a>
       <p className="message">
@@ -38,7 +42,11 @@ const Card = () => {
         standard calculator. Skills/Tools : CSS custom properties, Flexbox, CSS
         Grid, Javascript DOM, Javascript Events.
       </p>
-      <a href="https://ahmetyags.github.io/ios-calculator/" target="_blank">
+      <a
+        href="https://ahmetyags.github.io/ios-calculator/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img className="images" src={applegif} alt="calculator" />
       </a>
       <p className="message">
@@ -46,7 +54,11 @@ const Card = () => {
         of searched cities around the world with fetching Weather Api data.
         Skills/Tools : HTML, CSS, Weather Api.
       </p>
-      <a href="https://ahmetyags.github.io/weather-app/" target="_blank">
+      <a
+        href="https://ahmetyags.github.io/weather-app/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img className="images" src={weathergif} alt="weather" />
       </a>
     </div>

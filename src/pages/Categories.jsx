@@ -16,7 +16,7 @@ const Categories = () => {
   useEffect(() => {
     News();
   }, []);
-  console.log(haber);
+  // console.log(haber);
   return (
     <div className="contant">
       <h2>
