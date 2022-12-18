@@ -3,3 +3,17 @@
   border-radius: 35px;
   /* margin-left: rem; */
 }
+
+.postheader {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-left: 10rem;
+  font-size: xx-large;
+  margin-top: 15rem;
+}
+
+.contant {
+  position: relative;
+  top: 2rem;
+  bottom: 0.2rem;
+}

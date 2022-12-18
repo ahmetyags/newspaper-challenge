@@ -48,7 +48,7 @@ const Appbar = () => {
             onChange={handleQuery}
             value={query}
           />
-          <Button className="w-30 buton " type="submit" variant="dark">
+          <Button className="buton" type="submit" variant="dark">
             src
           </Button>
         </form>

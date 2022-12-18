@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <div className="contant">
       <h2>
-        <u className="posthead">Search</u>
+        <u className="postheader">Search</u>
       </h2>
       {searchNews?.map((i, index) => {
         return (

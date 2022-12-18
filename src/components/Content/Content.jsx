@@ -7,22 +7,29 @@ const Content = ({ haber }) => {
       {haber.slice(4, 20).map((i, index) => {
         // console.log(i);
         return (
-          <a
-            href={i.url}
-            className="list-group-item list-group-item-action "
+          <div
+            // href={i.url}
+            className="list-group-item list-group-item-action w-75 "
             aria-current="true"
-            target="_blank"
-            rel="noreferrer"
+            // target="_blank"
+            // rel="noreferrer"
             key={index}
           >
-            <div className="d-flex w-100 justify-content-between">
-              <h5 className="mb-3">{i.title}</h5>
-              <small>{i.publishedAt.slice(11, 16)}</small>
+            <div className=" w-50">
+              <span className="clock border rounded">
+                {i.publishedAt.slice(11, 16)}
+              </span>
             </div>
-            <p className="mb-2">{i.description}</p>
-            <small>{i.author}.</small>
-            <img className="minimg" src={i.urlToImage} alt="" />
-          </a>
+            <a href={i.url} target="_blank" rel="noreferrer">
+              <img className="minimg" src={i.urlToImage} alt="" />
+            </a>
+            <div className="news-desc mw-100 ">
+              <h4 className="mb-3">{i.title}</h4>
+              <p className="mb-2">{i.description}</p>{" "}
+            </div>
+
+            {/* <small>{i.author}.</small> */}
+          </div>
         );
       })}
     </div>
