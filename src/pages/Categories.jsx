@@ -5,7 +5,7 @@ const Categories = () => {
   const [haber, setHaber] = useState([]);
   // const [category, setCategory] = useState();
   const News = async (category) => {
-    const API_KEY = `676f017549224f488970f1835f9db971`;
+    const API_KEY = `7128d3ec833f4b7688e23849b8bcbd57`;
     const API_URL = `https://newsapi.org/v2/top-headlines?country=tr&category=${category}&apiKey=${API_KEY}`;
     try {
       const { data } = await axios(API_URL);
@@ -16,7 +16,7 @@ const Categories = () => {
   };
   const handleChange = (e) => {
     News(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
 
   useEffect(() => {
@@ -28,35 +28,120 @@ const Categories = () => {
       <h2>
         <u className="posthead">Categories</u>
       </h2>
-      <div className="contain col-lg-3">
-        <select
-          className="custom-select custom-select-sm border border-light"
-          size={8}
-          onChange={handleChange}
-        >
-          {/* <option defaultValue>All Categories</option> */}
-          <option value="business">Business</option>
-          <option value="entertainment">Entertainment</option>
-          <option value="general">General</option>
-          <option value="health">Health</option>
-          <option value="science">Science</option>
-          <option value="sports">Sports</option>
-          <option value="technology">Technology</option>
-        </select>
-      </div>
 
-      {haber.slice(0, 20).map((i, index) => {
-        return (
-          <div key={index} className="site-section news-3">
-            <div className="section col-lg-9">
-              <img className="imagesurl" src={i.urlToImage} alt="news" />
-              <h2 className="header-2">{i.description}</h2>
-              <p className="contents">{i.content}</p>
-              <span className="news-contain pr-2">{i.author}</span>
+      <div className="cstm-crl border " onClick={handleChange}>
+        <div className="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio1"
+            name="customRadio"
+            className="custom-control-input"
+            value="general"
+          />
+          <label className="custom-control-label" htmlFor="customRadio1">
+            General
+          </label>
+        </div>
+        <div className="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio2"
+            name="customRadio"
+            className="custom-control-input"
+            value="business"
+          />
+          <label className="custom-control-label" htmlFor="customRadio2">
+            Business
+          </label>
+        </div>
+        <div className="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio3"
+            name="customRadio"
+            className="custom-control-input"
+            value="entertainment"
+          />
+          <label className="custom-control-label" htmlFor="customRadio3">
+            Entertainment
+          </label>
+        </div>
+
+        <div className="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio4"
+            name="customRadio"
+            className="custom-control-input"
+            value="health"
+          />
+          <label className="custom-control-label" htmlFor="customRadio4">
+            Health
+          </label>
+        </div>
+        <div className="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio5"
+            name="customRadio"
+            className="custom-control-input"
+            value="science"
+          />
+          <label className="custom-control-label" htmlFor="customRadio5">
+            Science
+          </label>
+        </div>
+        <div className="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio6"
+            name="customRadio"
+            className="custom-control-input"
+            value="sports"
+          />
+          <label className="custom-control-label" htmlFor="customRadio6">
+            Sports
+          </label>
+        </div>
+        <div className="custom-control custom-radio">
+          <input
+            type="radio"
+            id="customRadio7"
+            name="customRadio"
+            className="custom-control-input"
+            value="technology"
+          />
+          <label className="custom-control-label" htmlFor="customRadio7">
+            Technology
+          </label>
+        </div>
+      </div>
+      <div className="st-s ">
+        {haber.slice(0, 20).map((i, index) => {
+          return (
+            <div key={index} className="site-section">
+              <div
+                // href={i.url}
+                className="list-group-item list-group-item-action border rounded w-75 "
+                aria-current="true"
+                // target="_blank"
+                // rel="noreferrer"
+                key={index}
+              >
+                <a href={i.url} target="_blank" rel="noreferrer">
+                  <img className="minimge" src={i.urlToImage} alt="" />
+                </a>
+                <div className="new-desc ">
+                  <h4 className="mb-3">{i.title}</h4>
+                  <p className="mb-2">{i.description}</p>
+                </div>
+
+                {/* <small>{i.author}.</small> */}
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 };

@@ -12,16 +12,21 @@ a {
   font-size: 1rem !important;
   padding: 1rem !important;
 }
+.nav-item {
+  margin-left: 2rem;
+  font-size: large !important;
+}
 .nav-item:hover {
   color: rgb(186, 48, 48) !important;
   font-size: large !important;
-  transform: translate(2s);
+  transform: translate(3s);
   transition: ease-in-out;
 }
 /* .nav-item:active {
-  color: rgb(255, 255, 255);
+  color: rgb(186, 48, 48);
   transform: translate(2s);
-  border-bottom: 1px solid gray;
+  border-radius: 13px;
+  border: 1px solid rgb(85, 68, 68);
 } */
 
 /* .nav-item:link {

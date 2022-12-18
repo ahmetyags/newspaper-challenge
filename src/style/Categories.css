@@ -1,29 +1,50 @@
 .site-section {
-  display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
-  margin-left: 25rem;
+  position: relative;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  margin-left: 20rem;
   font-size: medium;
-  top: 1rem;
+  bottom: 20rem;
+  /* margin-top: -10rem; */
 }
-/* .underline{
-margin-right: 55rem;
-} */
-/* .links:hover {
-  font-size: medium;
-  color: blue;
-} */
+
 .posthead {
   position: relative;
   margin-bottom: 2rem;
-  margin-left: 15rem;
+  margin-left: 17rem;
   font-size: xx-large;
   margin-top: 5rem;
 }
-.custom-select {
-  margin-left: 15rem;
+.custom-control {
+  /* top: 20rem; */
+  position: relative;
+  /* margin-left: 15rem; */
   margin-bottom: 1rem;
 }
 
 .headline {
   margin-top: 5rem;
+}
+
+.cstm-crl {
+  padding-top: 1.3rem;
+  width: 200px;
+  margin-left: 15.8rem;
+  padding-left: 1.2rem;
+}
+.minimge {
+  position: relative;
+  width: 380px;
+  top: 5rem;
+  border-radius: 12px;
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.new-desc {
+  position: relative;
+  color: white;
+  margin-left: 26rem;
+  bottom: 7rem;
+  /* display: flex;
+  flex-wrap: wrap; */
 }

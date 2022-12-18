@@ -1,28 +1,22 @@
 .container-fluid {
-  /* position: relative !important; */
-  top: 20px !important;
-  margin-right: 1rem !important;
+  /* position: relative!important; */
+  top: 3rem !important;
+  margin-right: 2.2rem !important;
 }
-/* .btn {
-  position: absolute !important;
-  margin-left: 10px !important;
-  margin-right: 10px !important;
-} */
-.appbar {
-  font-size: 2.5rem !important;
+
+.form-control {
+  position: relative;
+  top: 2rem;
 }
-.appbar:hover {
-  font-size: 2.5rem !important;
-}
-.form-search {
-  margin-left: 10rem !important;
-}
+
 .name-nav {
   font-size: xx-large !important;
 }
 
 .buton {
-  /* position: fixed; */
+  position: relative;
+  left: 13rem;
+  bottom: 6px;
   /* margin: 10px !important; */
   border-color: aliceblue;
   margin-bottom: 1rem !important;
