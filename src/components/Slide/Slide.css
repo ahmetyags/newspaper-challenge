@@ -6,6 +6,7 @@
 .carousel-item h3 {
   color: rgb(255, 0, 0);
   font-size: 2rem;
+  /* font-weight: 4rem; */
   text-shadow: 3px 3px 3px black;
 }
 
@@ -19,7 +20,7 @@
   margin-bottom: 1rem;
 }
 .carousel-indicators button {
-  background-color: #ccc !important;
+  background-color: rgb(255, 248, 248) !important;
   height: 0.4rem !important;
   width: 3rem !important;
   margin-right: 0.5rem !important;
