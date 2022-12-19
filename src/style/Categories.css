@@ -2,7 +2,7 @@
   position: relative;
   /* display: grid;
   grid-template-columns: repeat(2, 1fr); */
-  margin-left: 20rem;
+  margin-left: 33rem;
   font-size: medium;
   bottom: 20rem;
   /* margin-top: -10rem; */
@@ -37,6 +37,7 @@
   width: 380px;
   top: 5rem;
   border-radius: 12px;
+  box-shadow: 2px 2px 9px 3px whitesmoke;
   /* display: flex;
   flex-wrap: wrap; */
 }

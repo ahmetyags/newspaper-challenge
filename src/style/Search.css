@@ -1,19 +1,40 @@
-.imagesurl {
+.imagenurl {
   width: 600px !important;
   border-radius: 35px;
   /* margin-left: rem; */
 }
 
-.postheader {
+.postheaders {
   position: relative;
   margin-bottom: 2rem;
-  margin-left: 15rem;
+  margin-left: 20rem;
   font-size: xx-large;
   margin-top: 5rem;
+  bottom: 20rem;
 }
 
-.contant {
+.contanter {
   position: relative;
-  top: 2rem;
+  top: 22rem;
   bottom: 0.2rem;
+  margin-right: 19rem;
+  /* right: 1rem; */
+  /* background-color: black; */
+}
+
+.contains {
+  background-color: rgb(60, 58, 58);
+  color: white;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.site-sections {
+  position: relative;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  margin-left: 25rem;
+  font-size: medium;
+  bottom: 20rem;
+  /* margin-top: -10rem; */
 }

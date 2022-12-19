@@ -1,11 +1,11 @@
 .carousel-item {
-  max-height: calc(100vh - 250px);
+  max-height: calc(100vh - 270px);
   width: auto;
 }
 
-.carousel-item h5 {
-  color: black;
-  font-size: 2.5rem;
+.carousel-item h3 {
+  color: rgb(255, 0, 0);
+  font-size: 2rem;
   text-shadow: 3px 3px 3px black;
 }
 

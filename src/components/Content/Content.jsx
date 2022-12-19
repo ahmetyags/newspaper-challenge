@@ -9,7 +9,7 @@ const Content = ({ haber }) => {
         return (
           <div
             // href={i.url}
-            className="list-group-item list-group-item-action w-75 "
+            className="list-group-item list-group-item-action w-100 "
             aria-current="true"
             // target="_blank"
             // rel="noreferrer"
@@ -23,9 +23,9 @@ const Content = ({ haber }) => {
             <a href={i.url} target="_blank" rel="noreferrer">
               <img className="minimg" src={i.urlToImage} alt="" />
             </a>
-            <div className="news-desc mw-100 ">
+            <div className="news-descr mw-100 ">
               <h4 className="mb-3">{i.title}</h4>
-              <p className="mb-2">{i.description}</p>{" "}
+              <p className="mb-1">{i.description}</p>
             </div>
 
             {/* <small>{i.author}.</small> */}
