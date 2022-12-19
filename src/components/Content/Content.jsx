@@ -20,7 +20,7 @@ const Content = ({ haber }) => {
                 {i.publishedAt.slice(11, 16)}
               </span>
             </div>
-            <a href={i.url} target="_blank" rel="noreferrer">
+            <a className="content" href={i.url} target="_blank" rel="noreferrer">
               <img className="minimg" src={i.urlToImage} alt="" />
             </a>
             <div className="news-descr mw-100 ">
@@ -32,6 +32,7 @@ const Content = ({ haber }) => {
           </div>
         );
       })}
+      
     </div>
   );
 };

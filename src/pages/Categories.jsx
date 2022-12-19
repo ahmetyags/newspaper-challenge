@@ -5,7 +5,7 @@ const Categories = () => {
   const [haber, setHaber] = useState([]);
   // const [category, setCategory] = useState();
   const News = async (category) => {
-    const API_KEY = `7128d3ec833f4b7688e23849b8bcbd57`;
+    const API_KEY = `55c93a5adba845178d6adf7c3a6ecd3c`;
     const API_URL = `https://newsapi.org/v2/top-headlines?country=tr&category=${category}&apiKey=${API_KEY}`;
     try {
       const { data } = await axios(API_URL);
@@ -37,6 +37,7 @@ const Categories = () => {
             name="customRadio"
             className="custom-control-input"
             value="general"
+            // defaultChecked="customRadio"
           />
           <label className="custom-control-label" htmlFor="customRadio1">
             General
@@ -117,7 +118,7 @@ const Categories = () => {
         </div>
       </div>
       <div className="st-s ">
-        {haber.slice(0, 20).map((i, index) => {
+        {haber?.slice(0, 20).map((i, index) => {
           return (
             <div key={index} className="site-section">
               <div

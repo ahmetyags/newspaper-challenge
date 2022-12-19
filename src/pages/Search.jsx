@@ -1,13 +1,16 @@
 import React, { useContext } from "react";
 import { SearchNewsContext } from "../components/context/SearchNews";
+import { SearchWordContext } from "../components/context/SearchWord";
 import "../style/Search.css";
 const Search = () => {
   const { searchNews } = useContext(SearchNewsContext);
-  console.log(searchNews);
+  const { searchWord } = useContext(SearchWordContext);
+
+  // console.log(searchNews);
   return (
     <div className="contanter">
       <h2>
-        <u className="postheaders">Searched Word:</u>
+        <b className="postheaders">Searched Word: {searchWord}</b>
       </h2>
 
       {searchNews?.map((i, index) => {

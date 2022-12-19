@@ -1,19 +1,20 @@
 .navbar {
   display: flex !important;
   justify-content: center !important;
-  /* padding-left: 1rem; */
+  padding-left: 1rem;
   margin-left: 15rem !important;
   margin-right: 15rem !important;
   box-shadow: 0px 0.5px 0px rgb(73, 71, 71);
 }
 a {
-  color: rgb(77, 75, 75) !important;
+  /* color: rgb(77, 75, 75) !important; */
   text-decoration: none !important;
-  font-size: 1rem !important;
+  font-size: 1.3rem !important;
   padding: 1rem !important;
 }
 .nav-item {
-  margin-left: 2rem;
+  /* margin-left: 5rem; */
+  margin-right: 15rem;
   font-size: large !important;
 }
 .nav-item:hover {

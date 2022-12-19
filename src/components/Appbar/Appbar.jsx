@@ -4,14 +4,16 @@ import { useNavigate } from "react-router-dom";
 import { SearchNewsContext } from "../context/SearchNews";
 import { Button } from "react-bootstrap";
 import "./Appbar.css";
+import { SearchWordContext } from "../context/SearchWord";
 
 const Appbar = () => {
   const navigate = useNavigate();
   const { searchNews, setSearchNews } = useContext(SearchNewsContext);
+  const { setSearchWord } = useContext(SearchWordContext);
   const [query, setQuery] = useState([]);
 
   const News = async () => {
-    const API_KEY = `7128d3ec833f4b7688e23849b8bcbd57`;
+    const API_KEY = `55c93a5adba845178d6adf7c3a6ecd3c`;
     const API_URL = `https://newsapi.org/v2/top-headlines?q=${query}&apiKey=${API_KEY}`;
     try {
       const { data } = await axios(API_URL);
@@ -24,6 +26,7 @@ const Appbar = () => {
 
   const handleQuery = (e) => {
     setQuery(e.target.value);
+    setSearchWord(e.target.value);
   };
   const handleSubmit = (e) => {
     e.preventDefault();

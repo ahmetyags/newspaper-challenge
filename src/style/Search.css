@@ -38,3 +38,9 @@
   bottom: 20rem;
   /* margin-top: -10rem; */
 }
+.postheaders-2 {
+  position: absolute;
+  bottom: 20rem;
+  margin-left: 1rem;
+  /* left: 1rem; */
+}
